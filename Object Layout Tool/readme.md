@@ -11,3 +11,4 @@
 - 🎯 Tính toán tối ưu theo **số lượng**, **diện tích phủ** hoặc **khoảng cách**
 - 🖼️ Vẽ sơ đồ minh họa trực tiếp bằng `matplotlib`
 - 🌐 Chuyển đổi ngôn ngữ Tiếng Việt ↔ English
+![image](https://github.com/user-attachments/assets/dac1ee52-eb57-4a81-bb6b-54f9d1ee13aa)
