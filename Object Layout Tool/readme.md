@@ -1,14 +1,27 @@
-# 🧱 Object Layout Tool
+# Multi-bin Rectangle Packer (Kerf + Post-fill)
 
-> Công cụ xếp vật thể trên mặt phẳng tối ưu – hỗ trợ cả Tiếng Việt 🇻🇳 và English 🇬🇧  
-> Giao diện thân thiện, sơ đồ trực quan, hoạt động độc lập.
+GUI tool for packing axis-aligned rectangles into one or multiple bins, supporting:
 
----
+- Inner margin between parts
+- Edge margin (trim from bin border)
+- Kerf (blade thickness)
+- 0°/90° rotation option
+- Multiple bins
+- Post-fill for MaxRects algorithms
+- CSV import (w,h[,qty][,id])
+- JSON export of placements
+- Preview per bin with colors
+- Top-left origin toggle
 
-## 🚀 Tính năng chính
+## Requirements
 
-- 🔄 Tự động chọn chiều đặt vật thể (dọc, ngang, kết hợp)
-- 🎯 Tính toán tối ưu theo **số lượng**, **diện tích phủ** hoặc **khoảng cách**
-- 🖼️ Vẽ sơ đồ minh họa trực tiếp bằng `matplotlib`
-- 🌐 Chuyển đổi ngôn ngữ Tiếng Việt ↔ English
-![image](https://github.com/user-attachments/assets/dac1ee52-eb57-4a81-bb6b-54f9d1ee13aa)
+```bash
+pip install matplotlib
+```
+## CSV Format
+With header: columns named w, h, optional qty, optional id
+Without header: w,h[,qty]
+Example:
+w,h,qty
+50,30,2
+80,40,1
